@@ -24,10 +24,9 @@ select COUNT(senior_citizen)
 FROM customers
 JOIN contract_types;
 
-# Overall % of senior citzens who have churned (includes all plan types)
+# Overall count senior citzens who have churned (includes all plan types)
 select count(senior_citizen)
 FROM customers
-JOIN contract_types
 WHERE senior_citizen;
 
 # number of senior citizens who are month to month plan that have churned 
