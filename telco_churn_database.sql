@@ -19,12 +19,7 @@ SELECT *
 FROM customers;
 
 
-#Join customer service with contract type: Count the amount of senior citizens total (includes all plan types)
-select COUNT(senior_citizen)
-FROM customers
-JOIN contract_types;
-
-# Overall count senior citzens who have churned (includes all plan types)
+# Overall count senior citizens (includes all plan types)
 select count(senior_citizen)
 FROM customers
 WHERE senior_citizen;
